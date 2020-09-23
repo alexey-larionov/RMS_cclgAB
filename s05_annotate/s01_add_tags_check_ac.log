@@ -1,0 +1,37 @@
+Job id: 29086870
+Allocated node: cpu-e-1111
+Tue 22 Sep 19:26:30 BST 2020
+
+Job name: s01_add_tags_check_ac
+
+Initial working folder:
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s05_annotate
+
+ ------------------ Job progress ------------------ 
+
+Started s01_add_tags_check_ac: 22Sep2020_19:26:30
+
+Variant counts:
+
+Number of samples: 84
+Number of SNPs:    135758
+Number of INDELs:  15025
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   150783
+
+Adding tags ...
+
+Removing variants with AC==0 ...
+
+Counts after removing variants with AC=0: 
+
+Number of samples: 84
+Number of SNPs:    135317
+Number of INDELs:  10979
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   146296
+
+Done: 22Sep2020_19:27:01
+

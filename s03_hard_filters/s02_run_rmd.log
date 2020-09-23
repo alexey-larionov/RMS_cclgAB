@@ -1,0 +1,74 @@
+Job id: 29078233
+Allocated node: cpu-e-467
+Tue 22 Sep 16:20:50 BST 2020
+
+Job name: s02_run_rmd
+
+Initial working folder:
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s03_hard_filters
+
+ ------------------ Job progress ------------------ 
+
+Started s02_run_rmd: 22Sep2020_16:20:50
+
+
+R version 3.6.3 (2020-02-29) -- "Holding the Windsock"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library('rmarkdown'); render('s02_check_data.Rmd')
+
+
+processing file: s02_check_data.Rmd
+  |                                                                              |                                                                      |   0%  |                                                                              |.......                                                               |  10%
+  ordinary text without R code
+
+  |                                                                              |..............                                                        |  20%
+label: unnamed-chunk-1 (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                              |.....................                                                 |  30%
+  ordinary text without R code
+
+  |                                                                              |............................                                          |  40%
+label: unnamed-chunk-2
+  |                                                                              |...................................                                   |  50%
+  ordinary text without R code
+
+  |                                                                              |..........................................                            |  60%
+label: unnamed-chunk-3
+  |                                                                              |.................................................                     |  70%
+  ordinary text without R code
+
+  |                                                                              |........................................................              |  80%
+label: unnamed-chunk-4
+  |                                                                              |...............................................................       |  90%
+  ordinary text without R code
+
+  |                                                                              |......................................................................| 100%
+label: unnamed-chunk-5
+
+output file: s02_check_data.knit.md
+
+/usr/local/software/pandoc/2.0.6/bin/pandoc +RTS -K512m -RTS s02_check_data.utf8.md --to html4 --from markdown+autolink_bare_uris+tex_math_single_backslash --output s02_check_data.html --email-obfuscation none --self-contained --standalone --section-divs --table-of-contents --toc-depth 3 --variable toc_float=1 --variable toc_selectors=h1,h2,h3 --variable toc_collapsed=1 --variable toc_smooth_scroll=1 --variable toc_print=1 --template /home/al720/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/h/default.html --no-highlight --variable highlightjs=1 --variable 'theme:bootstrap' --include-in-header /tmp/RtmpjdhjYS/rmarkdown-str4e6e3c97a1b7.html --mathjax --variable 'mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --lua-filter /home/al720/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/pagebreak.lua --lua-filter /home/al720/R/x86_64-pc-linux-gnu-library/3.6/rmarkdown/rmd/lua/latex-div.lua 
+
+Output created: s02_check_data.html
+> 
+> 
+Done: 22Sep2020_16:20:57
+

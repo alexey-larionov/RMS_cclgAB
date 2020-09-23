@@ -1,0 +1,44 @@
+Job id: 29014840
+Allocated node: cpu-e-223
+Mon 21 Sep 11:55:13 BST 2020
+
+Job name: s01_reduce_padding
+
+Initial working folder:
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/scripts/s01_reduce_padding
+
+ ------------------ Job progress ------------------ 
+
+Started s01_reduce_padding: 21Sep2020_11:55:13
+
+Variant counts in the source vcf with 100bp padding:
+
+Number of samples: 84
+Number of SNPs:    328754
+Number of INDELs:  48450
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   375449
+
+Selecting variants ...
+
+Variant counts after changing padding to 10 bp:
+
+Number of samples: 84
+Number of SNPs:    175610
+Number of INDELs:  19047
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   193894
+
+Calculating bcfstats...
+
+Making plots...
+Parsing bcftools stats output: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s01_reduce_padding/CCLG_GL_hg38.bwa_10bp.stats/CCLG_GL_hg38.bwa_10bp.vchk
+Plotting graphs: python3 plot.py
+Creating PDF: pdflatex summary.tex >plot-vcfstats.log 2>&1
+Finished: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s01_reduce_padding/CCLG_GL_hg38.bwa_10bp.stats/summary.pdf
+
+
+Done: 21Sep2020_12:13:37
+

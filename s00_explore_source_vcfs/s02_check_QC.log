@@ -1,0 +1,42 @@
+Job id: 28877097
+Allocated node: cpu-e-57
+Thu 17 Sep 23:18:43 BST 2020
+
+Job name: s02_check_QC
+
+Initial working folder:
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/scripts/s00_explore_source_vcfs
+
+ ------------------ Job progress ------------------ 
+
+Started s02_check_QC: 17Sep2020_23:18:43
+
+vcf: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s00_source_vcfs/CCLG_GL_hg38.bwa.QC.vcf
+stats_folder: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s00_source_vcfs/CCLG_GL_hg38.bwa.QC.stats
+
+Compressing ...
+Indexing ...
+
+Variant counts:
+
+Number of samples: 84
+Number of SNPs:    280354
+Number of INDELs:  35688
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   314789
+
+Calculating bcfstats...
+
+Making plots...
+Parsing bcftools stats output: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s00_source_vcfs/CCLG_GL_hg38.bwa.QC.stats/CCLG_GL_hg38.bwa.QC.vchk
+Plotting graphs: python3 plot.py
+Creating PDF: pdflatex summary.tex >plot-vcfstats.log 2>&1
+Finished: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s00_source_vcfs/CCLG_GL_hg38.bwa.QC.stats/summary.pdf
+
+--- FILTER ---
+
+ 314789 .
+
+Done: 17Sep2020_23:20:03
+

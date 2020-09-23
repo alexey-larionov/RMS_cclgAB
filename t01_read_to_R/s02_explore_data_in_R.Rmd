@@ -1,0 +1,127 @@
+---
+title: "Explore data in R"
+author: "Alexey Larionov"
+date: "23 September 2020"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# Summary
+
+To be added ...  
+Phenotype data ?  
+
+<style>
+pre{
+  overflow-x: auto;
+}
+pre code{
+  word-wrap: normal;
+  white-space: pre;
+}
+</style>
+
+```{r echo=F}
+options(width=999)
+```
+
+# Start section
+
+```{r}
+
+# Time
+Sys.time()
+
+# Memory
+gc()
+
+# Clean up
+rm(list=ls())
+graphics.off()
+
+# Options
+options(stringsAsFactors = F)
+
+# Working folders
+base_folder <- "/rds/project/erf33/rds-erf33-medgen"
+project_folder=file.path(base_folder,"users/mae/RMS_2020Sept/RMS_cclgAB")
+data_folder <- file.path(project_folder,"data","t01_read_to_R")
+scripts_folder <- file.path(project_folder,"scripts","t01_read_to_R")
+setwd(scripts_folder)
+
+# Required libraries
+library(dplyr)
+
+```
+
+# Load data
+
+```{r}
+
+# VCF file name
+load(file.path(data_folder,"s01_import_vcf_to_R.RData"))
+
+```
+
+# Check data
+
+```{r}
+
+ls()
+
+dim(full_header.df)
+dim(full_variants.df)
+
+dim(full_dp.mx)
+dim(full_gq.mx)
+dim(full_gt.mx)
+dim(full_ad.mx)
+
+```
+
+# Chromosomes
+
+```{r}
+
+full_variants.df %>% 
+  group_by(CHROM) %>% 
+  summarise(counts=n()) %>% 
+  arrange(CHROM) %>% 
+  print(n=Inf)
+
+```
+
+# Filter
+
+```{r}
+
+full_variants.df %>% 
+  group_by(FILTER) %>% 
+  summarise(counts=n()) %>% 
+  arrange(desc(counts))
+
+```
+
+# Variants' QUAL
+
+```{r}
+
+quantile(full_variants.df$QUAL)
+hist(full_variants.df$QUAL)
+hist(log10(full_variants.df$QUAL))
+
+```
+
+# Final section
+
+```{r}
+
+sessionInfo()
+Sys.time()
+gc()
+
+```

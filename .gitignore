@@ -1,8 +1,9 @@
 *
+!*/
 !.gitignore
-!**/*.sh
-!**/*.log
-!**/*.txt
-!**/*.R
-!**/*.Rmd
-!**/*.html
+!*.sh
+!*.log
+!*.txt
+!*.R
+!*.Rmd
+!*.html

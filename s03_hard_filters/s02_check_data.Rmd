@@ -1,0 +1,83 @@
+---
+title: "Check data"
+author: "AL"
+date: "22/09/2020"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# Summary  
+
+Explore ranges of QUAL and DP after hard filtering  
+
+<style>
+pre {
+  overflow-x: auto;
+}
+pre code {
+  word-wrap: normal;
+  white-space: pre;
+}
+</style>
+
+```{r echo=F}
+options(width = 999)
+```
+
+# Start section
+
+```{r}
+
+Sys.time()
+gc()
+options(stringsAsFactors=F)
+
+```
+
+# Read data
+
+```{r}
+
+scripts_folder="/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s03_hard_filters"
+setwd(scripts_folder)
+
+data_folder="/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s03_hard_filters"
+data.df <- read.table(file.path(data_folder,"CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp_annotations.txt"), 
+                          header=T, quote="", sep="\t", comment.char = "")
+
+colnames(data.df) <- c("CHROM","POS","ID","REF","ALT","FILTER","QUAL","DP","VQSLOD")
+
+dim(data.df)
+head(data.df)
+
+```
+
+# Check QUAL and DP
+
+```{r}
+
+quantile(data.df$QUAL)
+quantile(data.df$DP)
+
+hist(data.df$QUAL)
+hist(log10(data.df$QUAL))
+
+hist(data.df$DP)
+hist(log10(data.df$DP))
+
+```
+
+# End section
+
+```{r}
+
+ls()
+Sys.time()
+gc()
+sessionInfo()
+
+```

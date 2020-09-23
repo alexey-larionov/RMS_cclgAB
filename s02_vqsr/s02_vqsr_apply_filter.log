@@ -1,0 +1,49 @@
+Job id: 29038608
+Allocated node: cpu-e-33
+Mon 21 Sep 16:46:36 BST 2020
+
+Job name: s02_vqsr_apply_filter
+
+Initial working folder:
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/scripts/s02_vqsr
+
+ ------------------ Job progress ------------------ 
+
+Started s02_vqsr_apply_filter: 21Sep2020_16:46:36
+
+Variant counts in the source vcf:
+
+Number of samples: 84
+Number of SNPs:    175610
+Number of INDELs:  19047
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   193894
+
+Selecting variants ...
+
+Variant counts after applying vqsr filters:
+
+Number of samples: 84
+Number of SNPs:    145873
+Number of INDELs:  12855
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   158278
+
+--- FILTER ---
+
+ 158278 PASS
+
+
+Calculating bcfstats...
+
+Making plots...
+Parsing bcftools stats output: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s02_vqsr/CCLG_GL_hg38.bwa_10bp_vqsr_filt.stats/CCLG_GL_hg38.bwa_10bp_vqsr_filt.vchk
+Plotting graphs: python3 plot.py
+Creating PDF: pdflatex summary.tex >plot-vcfstats.log 2>&1
+Finished: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s02_vqsr/CCLG_GL_hg38.bwa_10bp_vqsr_filt.stats/summary.pdf
+
+
+Done: 21Sep2020_17:05:46
+

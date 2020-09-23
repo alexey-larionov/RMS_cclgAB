@@ -1,0 +1,17 @@
+Job id: 29087463
+Allocated node: cpu-e-79
+Tue 22 Sep 19:32:54 BST 2020
+
+Job name: s02_add_ids
+
+Initial working folder:
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s05_annotate
+
+ ------------------ Job progress ------------------ 
+
+Started s01_add_ids: 22Sep2020_19:32:54
+
+Adding variant IDs ...
+
+Done: 22Sep2020_19:33:03
+

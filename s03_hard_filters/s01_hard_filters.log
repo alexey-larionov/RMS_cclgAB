@@ -1,0 +1,55 @@
+Job id: 29075701
+Allocated node: cpu-e-195
+Tue 22 Sep 15:58:10 BST 2020
+
+Job name: s01_hard_filters
+
+Initial working folder:
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s03_hard_filters
+
+ ------------------ Job progress ------------------ 
+
+Started s01_hard_filters: 22Sep2020_15:58:10
+
+Variant counts in the source vcf:
+
+Number of samples: 84
+Number of SNPs:    145873
+Number of INDELs:  12855
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   158278
+
+Filtering by QUAL ...
+
+Variant counts after applying QUAL filter:
+
+Number of samples: 84
+Number of SNPs:    139768
+Number of INDELs:  11503
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   150821
+
+Filtering by DP ...
+
+Variant counts after applying DP filter:
+
+Number of samples: 84
+Number of SNPs:    135467
+Number of INDELs:  10600
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   145675
+
+Calculating bcfstats...
+
+Making plots...
+Parsing bcftools stats output: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s03_hard_filters/CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp.stats/CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp.vchk
+Plotting graphs: python3 plot.py
+Creating PDF: pdflatex summary.tex >plot-vcfstats.log 2>&1
+Finished: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s03_hard_filters/CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp.stats/summary.pdf
+
+
+Done: 22Sep2020_16:01:24
+
