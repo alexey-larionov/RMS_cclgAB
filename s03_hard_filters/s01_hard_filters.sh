@@ -90,7 +90,7 @@ bcftools +counts "${source_vcf}"
 
 # Filter by QUAL
 echo ""
-echo "Filtering by QUAL ..."
+echo "Filtering by QUAL >= 150 ..."
 "${java}" -Xmx40g -jar "${gatk}" \
   -T SelectVariants \
   -R "${ref_genome}" \
@@ -108,7 +108,7 @@ bcftools +counts "${qual_vcf}"
 
 # Filter by DP
 echo ""
-echo "Filtering by DP ..."
+echo "Filtering by DP >= 840 (10 DP x 84 samples) ..."
 "${java}" -Xmx40g -jar "${gatk}" \
   -T SelectVariants \
   -R "${ref_genome}" \

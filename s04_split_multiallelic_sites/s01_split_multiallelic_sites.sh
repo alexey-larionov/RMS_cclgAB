@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# s01_split_multialelic_sites.sh
+# s01_split_multiallelic_sites.sh
 # Alexey Larionov, 22Sep2020
 
-#SBATCH -J s01_split_multialelic_sites
+#SBATCH -J s01_split_multiallelic_sites
 #SBATCH -A TISCHKOWITZ-SL2-CPU
 #SBATCH -p skylake
 #SBATCH --mail-type=ALL
@@ -11,7 +11,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
 #SBATCH --time=01:00:00
-#SBATCH --output=s01_split_multialelic_sites.log
+#SBATCH --output=s01_split_multiallelic_sites.log
 #SBATCH --qos=INTR
 
 ## Modules section (required, do not remove)

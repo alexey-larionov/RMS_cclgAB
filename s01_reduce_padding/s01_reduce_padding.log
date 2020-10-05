@@ -1,15 +1,15 @@
-Job id: 29014840
-Allocated node: cpu-e-223
-Mon 21 Sep 11:55:13 BST 2020
+Job id: 29571023
+Allocated node: cpu-e-93
+Fri  2 Oct 16:28:12 BST 2020
 
 Job name: s01_reduce_padding
 
 Initial working folder:
-/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/scripts/s01_reduce_padding
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s01_reduce_padding
 
  ------------------ Job progress ------------------ 
 
-Started s01_reduce_padding: 21Sep2020_11:55:13
+Started s01_reduce_padding: 02Oct2020_16:28:12
 
 Variant counts in the source vcf with 100bp padding:
 
@@ -34,11 +34,11 @@ Number of sites:   193894
 Calculating bcfstats...
 
 Making plots...
-Parsing bcftools stats output: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s01_reduce_padding/CCLG_GL_hg38.bwa_10bp.stats/CCLG_GL_hg38.bwa_10bp.vchk
+Parsing bcftools stats output: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s01_reduce_padding/CCLG_GL_hg38.bwa_10bp.stats/CCLG_GL_hg38.bwa_10bp.vchk
 Plotting graphs: python3 plot.py
 Creating PDF: pdflatex summary.tex >plot-vcfstats.log 2>&1
-Finished: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s01_reduce_padding/CCLG_GL_hg38.bwa_10bp.stats/summary.pdf
+Finished: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s01_reduce_padding/CCLG_GL_hg38.bwa_10bp.stats/summary.pdf
 
 
-Done: 21Sep2020_12:13:37
+Done: 02Oct2020_16:45:38
 

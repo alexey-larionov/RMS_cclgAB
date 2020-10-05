@@ -1,6 +1,6 @@
-Job id: 29075701
-Allocated node: cpu-e-195
-Tue 22 Sep 15:58:10 BST 2020
+Job id: 29605234
+Allocated node: cpu-e-1050
+Sat  3 Oct 14:34:20 BST 2020
 
 Job name: s01_hard_filters
 
@@ -9,38 +9,38 @@ Initial working folder:
 
  ------------------ Job progress ------------------ 
 
-Started s01_hard_filters: 22Sep2020_15:58:10
+Started s01_hard_filters: 03Oct2020_14:34:20
 
 Variant counts in the source vcf:
 
 Number of samples: 84
-Number of SNPs:    145873
-Number of INDELs:  12855
+Number of SNPs:    145897
+Number of INDELs:  12854
 Number of MNPs:    0
 Number of others:  0
-Number of sites:   158278
+Number of sites:   158301
 
-Filtering by QUAL ...
+Filtering by QUAL >= 150 ...
 
 Variant counts after applying QUAL filter:
 
 Number of samples: 84
-Number of SNPs:    139768
-Number of INDELs:  11503
+Number of SNPs:    139787
+Number of INDELs:  11502
 Number of MNPs:    0
 Number of others:  0
-Number of sites:   150821
+Number of sites:   150839
 
-Filtering by DP ...
+Filtering by DP >= 840 (10 DP x 84 samples) ...
 
 Variant counts after applying DP filter:
 
 Number of samples: 84
-Number of SNPs:    135467
-Number of INDELs:  10600
+Number of SNPs:    135482
+Number of INDELs:  10599
 Number of MNPs:    0
 Number of others:  0
-Number of sites:   145675
+Number of sites:   145689
 
 Calculating bcfstats...
 
@@ -51,5 +51,5 @@ Creating PDF: pdflatex summary.tex >plot-vcfstats.log 2>&1
 Finished: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s03_hard_filters/CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp.stats/summary.pdf
 
 
-Done: 22Sep2020_16:01:24
+Done: 03Oct2020_14:38:43
 

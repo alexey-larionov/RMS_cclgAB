@@ -1,0 +1,36 @@
+Job id: 29085612
+Allocated node: cpu-e-3
+Tue 22 Sep 19:02:45 BST 2020
+
+Job name: s02_clean_star_in_alt
+
+Initial working folder:
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s04_split_multiallelic_sites
+
+ ------------------ Job progress ------------------ 
+
+Started s02_clean_star_in_alt: 22Sep2020_19:02:45
+
+Variant counts before cleaning:
+
+Number of samples: 84
+Number of SNPs:    135758
+Number of INDELs:  15025
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   151153
+
+Remove variants with * in ALT
+(appeared after splitting multiallelic sitrs ?)
+
+Variant counts after removing * in ALT: 
+
+Number of samples: 84
+Number of SNPs:    135758
+Number of INDELs:  15025
+Number of MNPs:    0
+Number of others:  0
+Number of sites:   150783
+
+Done: 22Sep2020_19:03:03
+

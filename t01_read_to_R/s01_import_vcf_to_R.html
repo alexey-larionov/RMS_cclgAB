@@ -284,12 +284,12 @@ s</style>
 <h1>Start section</h1>
 <pre class="r"><code># Time
 Sys.time()</code></pre>
-<pre><code>## [1] &quot;2020-09-23 13:58:26 BST&quot;</code></pre>
+<pre><code>## [1] &quot;2020-09-24 13:29:51 BST&quot;</code></pre>
 <pre class="r"><code># Memory info
 gc()</code></pre>
 <pre><code>##          used (Mb) gc trigger (Mb) max used (Mb)
-## Ncells 408359 21.9     845890 45.2   641700 34.3
-## Vcells 779093  6.0    8388608 64.0  1757535 13.5</code></pre>
+## Ncells 408351 21.9     845867 45.2   641700 34.3
+## Vcells 779054  6.0    8388608 64.0  1757535 13.5</code></pre>
 <pre class="r"><code># Clean up
 rm(list=ls())
 graphics.off()
@@ -304,9 +304,9 @@ scripts_folder &lt;- file.path(project_folder,&quot;scripts&quot;,&quot;t01_read
 setwd(scripts_folder)
 
 data_folder &lt;- file.path(project_folder,&quot;data&quot;,&quot;t01_read_to_R&quot;)
-dir.create(data_folder)</code></pre>
-<pre><code>## Warning in dir.create(data_folder): '/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/t01_read_to_R' already exists</code></pre>
-<pre class="r"><code># Required library
+#dir.create(data_folder)
+
+# Required library
 #install.packages(&quot;Rcpp&quot;)
 #install.packages(&quot;vcfR&quot;)
 library(vcfR)</code></pre>
@@ -324,7 +324,7 @@ vcf_file &lt;- file.path(project_folder,&quot;data&quot;,&quot;s05_annotate&quot
 
 # Read vcf to vcfR object 
 # called &quot;full.vcfr&quot;&quot; to distinguish with the possible later subsetted versions of vcfr 
-full.vcfr &lt;- read.vcfR(vcf_file, verbose=F)
+full.vcfr &lt;- read.vcfR(vcf_file, verbose=F) # verbose = F
 
 # Check result
 full.vcfr</code></pre>
@@ -417,8 +417,8 @@ dim(full_gt.mx)</code></pre>
 ## chr1_941119_A_G &quot;1/1&quot;          &quot;1/1&quot;          &quot;1/1&quot;         
 ## chr1_942934_G_C &quot;0/1&quot;          &quot;0/1&quot;          &quot;0/0&quot;         
 ## chr1_943329_C_T &quot;0/0&quot;          &quot;0/0&quot;          &quot;0/0&quot;</code></pre>
-<pre class="r"><code>sum(is.na(full_gt.mx))</code></pre>
-<pre><code>## [1] 47519</code></pre>
+<pre class="r"><code>sum(is.na(full_gt.mx))/(ncol(full_gt.mx)*nrow(full_gt.mx))</code></pre>
+<pre><code>## [1] 0.003866834</code></pre>
 <pre class="r"><code># Extract genotype depth (its a numeric matrix)
 full_dp.mx &lt;- extract.gt(full.vcfr, element=&quot;DP&quot;, as.numeric = T)
 dim(full_dp.mx)</code></pre>
@@ -474,6 +474,8 @@ dim(full_ad.mx)</code></pre>
 ## chr1_943329_C_T &quot;38,0&quot;         &quot;41,0&quot;         &quot;33,0&quot;</code></pre>
 <pre class="r"><code>sum(is.na(full_ad.mx))/(nrow(full_ad.mx)*ncol(full_ad.mx))</code></pre>
 <pre><code>## [1] 0</code></pre>
+<pre class="r"><code>sum(full_ad.mx == &quot;0,0&quot;)</code></pre>
+<pre><code>## [1] 45344</code></pre>
 <pre class="r"><code># Clean-up
 rm(full.vcfr)</code></pre>
 </div>
@@ -519,10 +521,10 @@ rm(full.vcfr)</code></pre>
 ##  [1] pinfsc50_1.2.0    Rcpp_1.0.5        compiler_3.6.3    pillar_1.4.6      tools_3.6.3       digest_0.6.20     evaluate_0.14     tibble_3.0.3      lifecycle_0.2.0   nlme_3.1-149      lattice_0.20-38   viridisLite_0.3.0 mgcv_1.8-33       pkgconfig_2.0.3   rlang_0.4.7       Matrix_1.2-18     cli_1.1.0         yaml_2.2.0        parallel_3.6.3    xfun_0.17         stringr_1.4.0     dplyr_1.0.2       cluster_2.1.0     knitr_1.29        generics_0.0.2    vctrs_0.3.4       grid_3.6.3        tidyselect_1.1.0  glue_1.4.1        R6_2.4.0          fansi_0.4.1       rmarkdown_2.3     purrr_0.3.2       magrittr_1.5      htmltools_0.5.0   ellipsis_0.3.1    MASS_7.3-53       splines_3.6.3     assertthat_0.2.1  memuse_4.1-0      permute_0.9-5     ape_5.4-1         utf8_1.1.4        stringi_1.4.3     crayon_1.3.4      vegan_2.5-6</code></pre>
 <pre class="r"><code>gc()</code></pre>
 <pre><code>##            used  (Mb) gc trigger   (Mb)  max used   (Mb)
-## Ncells  3223615 172.2   10574612  564.8  13218264  706.0
-## Vcells 80897575 617.2  240500087 1834.9 231960582 1769.8</code></pre>
+## Ncells  3222989 172.2   10573340  564.7  13216674  705.9
+## Vcells 80896235 617.2  240494624 1834.9 231958964 1769.8</code></pre>
 <pre class="r"><code>Sys.time()</code></pre>
-<pre><code>## [1] &quot;2020-09-23 14:01:22 BST&quot;</code></pre>
+<pre><code>## [1] &quot;2020-09-24 13:32:48 BST&quot;</code></pre>
 </div>
 
 

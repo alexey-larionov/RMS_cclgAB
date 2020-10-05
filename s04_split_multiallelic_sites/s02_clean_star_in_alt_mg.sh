@@ -60,15 +60,15 @@ stats_file="${stats_folder}/CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp_sma_cln.vchk"
 
 # Tools
 tools_folder="${base_folder}/tools"
-bcftools="${tools_folder}/bcftools/bcftools-1.10.2/bin/bcftools"
-#bcftools_bin="${tools_folder}/bcftools/bcftools-1.10.2/bin"
+#bcftools="${tools_folder}/bcftools/bcftools-1.10.2/bin/bcftools"
+bcftools_bin="${tools_folder}/bcftools/bcftools-1.10.2/bin"
 python_bin="${tools_folder}/python/python_3.8.3/bin" # Includes mathplotlib for bcftools vcfcheck
 export PATH="${bcftools_bin}:${python_bin}:$PATH"
 
 # Count variants
 echo "Variant counts before cleaning:"
 echo ""
-"${bcftools}" +counts "${source_vcf}"
+bcftools +counts "${source_vcf}"
 echo ""
 
 # Filter variants
@@ -76,7 +76,7 @@ echo "Removing variants with * in ALT ..."
 echo "(appeared after splitting multiallelic sitrs ?)"
 echo ""
 
-"${bcftools}" view \
+bcftools view \
   "${source_vcf}" \
   --exclude 'ALT="*"' \
   --output-type z \
@@ -84,26 +84,25 @@ echo ""
   --output-file "${clean_vcf}" \
   &> "${clean_log}"
 
-"${bcftools}" index "${clean_vcf}"
+bcftools index "${clean_vcf}"
 
 echo "Variant counts after removing * in ALT: "
 echo ""
-"${bcftools}" +counts "${clean_vcf}"
+bcftools +counts "${clean_vcf}"
 echo ""
 
 # Calculate bcfstats
 echo ""
 echo "Calculating bcfstats..."
 echo ""
-"${bcftools}" stats -s- "${clean_vcf}" > "${stats_file}"
+bcftools stats -s- "${clean_vcf}" > "${stats_file}"
 
 # Plot the stats (PDF requires texlive)
 echo "Making plots..."
 plot-vcfstats -p "${stats_folder}" "${stats_file}"
 echo ""
 
-
-
 # Completion message
+echo ""
 echo "Done: $(date +%d%b%Y_%H:%M:%S)"
 echo ""

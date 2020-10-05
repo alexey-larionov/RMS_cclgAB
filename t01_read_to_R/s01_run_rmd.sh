@@ -51,7 +51,7 @@ cd "${scripts_folder}"
 
 # Tools
 module load pandoc # required by rmarkdown for html rendering
-module load R # make sure its the same R version that was used in rmd script
+module load R/3.6 # make sure its the same R version that was used in rmd script
 
 # Execute rmd script and render html log
 R -e "library('rmarkdown'); render('s01_import_vcf_to_R.Rmd')"

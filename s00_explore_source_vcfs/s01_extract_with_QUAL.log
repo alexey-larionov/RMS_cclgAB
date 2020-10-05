@@ -1,17 +1,17 @@
-Job id: 28951611
-Allocated node: cpu-e-354
-Sun 20 Sep 13:55:31 BST 2020
+Job id: 29568609
+Allocated node: cpu-e-1110
+Fri  2 Oct 16:04:19 BST 2020
 
 Job name: s01_extract_with_QUAL
 
 Initial working folder:
-/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/scripts/s00_explore_source_vcfs
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s00_explore_source_vcfs
 
  ------------------ Job progress ------------------ 
 
-Started s01_extract_with_QUAL: 20Sep2020_13:55:31
+Started s01_extract_with_QUAL: 02Oct2020_16:04:19
 
-vcf: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s00_source_vcfs/CCLG_GL_hg38.bwa.vcf.gz
+vcf: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s00_source_vcfs/CCLG_GL_hg38.bwa.vcf.gz
 
-Done: 20Sep2020_13:55:36
+Done: 02Oct2020_16:04:23
 

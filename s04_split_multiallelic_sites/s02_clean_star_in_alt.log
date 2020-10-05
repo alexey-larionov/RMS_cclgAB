@@ -1,6 +1,6 @@
-Job id: 29085612
-Allocated node: cpu-e-3
-Tue 22 Sep 19:02:45 BST 2020
+Job id: 29664364
+Allocated node: cpu-e-234
+Mon  5 Oct 15:58:14 BST 2020
 
 Job name: s02_clean_star_in_alt
 
@@ -9,28 +9,38 @@ Initial working folder:
 
  ------------------ Job progress ------------------ 
 
-Started s02_clean_star_in_alt: 22Sep2020_19:02:45
+Started s02_clean_star_in_alt: 05Oct2020_15:58:14
 
 Variant counts before cleaning:
 
 Number of samples: 84
-Number of SNPs:    135758
-Number of INDELs:  15025
+Number of SNPs:    135774
+Number of INDELs:  15024
 Number of MNPs:    0
 Number of others:  0
-Number of sites:   151153
+Number of sites:   151169
 
-Remove variants with * in ALT
+Removing variants with * in ALT ...
 (appeared after splitting multiallelic sitrs ?)
 
 Variant counts after removing * in ALT: 
 
 Number of samples: 84
-Number of SNPs:    135758
-Number of INDELs:  15025
+Number of SNPs:    135774
+Number of INDELs:  15024
 Number of MNPs:    0
 Number of others:  0
-Number of sites:   150783
+Number of sites:   150798
 
-Done: 22Sep2020_19:03:03
 
+Calculating bcfstats...
+
+Making plots...
+Parsing bcftools stats output: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s04_split_multiallelic_sites/CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp_sma_cln.stats/CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp_sma_cln.vchk
+Plotting graphs: python3 plot.py
+Creating PDF: pdflatex summary.tex >plot-vcfstats.log 2>&1
+The command exited with non-zero status, please consult the output of pdflatex: /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s04_split_multiallelic_sites/CCLG_GL_hg38.bwa_10bp_vqsr_qual_dp_sma_cln.statsplot-vcfstats.log
+
+ at /rds/project/erf33/rds-erf33-medgen/tools/bcftools/bcftools-1.10.2/bin/plot-vcfstats line 111.
+	main::error('The command exited with non-zero status, please consult the o...') called at /rds/project/erf33/rds-erf33-medgen/tools/bcftools/bcftools-1.10.2/bin/plot-vcfstats line 2086
+	main::create_pdf('HASH(0xde7a58)') called at /rds/project/erf33/rds-erf33-medgen/tools/bcftools/bcftools-1.10.2/bin/plot-vcfstats line 72

@@ -1,27 +1,27 @@
-Job id: 29017915
-Allocated node: cpu-e-416
-Mon 21 Sep 12:18:20 BST 2020
+Job id: 29575189
+Allocated node: cpu-e-457
+Fri  2 Oct 17:06:48 BST 2020
 
 Job name: s01_vqsr_add_filter
 
 Initial working folder:
-/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/scripts/s02_vqsr
+/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s02_vqsr
 
- ------------------ Job progress ------------------
+ ------------------ Job progress ------------------ 
 
-Started s01_vqsr_add_filter: 21Sep2020_12:18:20
+Started s01_vqsr_add_filter: 02Oct2020_17:06:48
 
 Started training vqsr snp model
-Completed training vqsr snp model: 21Sep2020_12:30:26
+Completed training vqsr snp model: 02Oct2020_17:18:30
 
 Started applying vqsr snp model
-Completed applying vqsr snp model: 21Sep2020_12:45:47
+Completed applying vqsr snp model: 02Oct2020_17:33:48
 
 Started training vqsr indel model
-Completed training vqsr indel model: 21Sep2020_12:56:28
+Completed training vqsr indel model: 02Oct2020_17:43:22
 
 Started applying vqsr indel model
-Completed applying vqsr indel model: 21Sep2020_13:14:02
+Completed applying vqsr indel model: 02Oct2020_17:59:32
 
 Variant counts:
 
@@ -34,11 +34,12 @@ Number of sites:   193894
 
 --- FILTER ---
 
- 158278 PASS
-  23537 VQSRTrancheSNP99.00to100.00
-   5865 VQSRTrancheSNP97.00to99.00
-   4641 VQSRTrancheINDEL99.00to100.00
-   1310 VQSRTrancheINDEL97.00to99.00
-    263 VQSRTrancheINDEL95.00to97.00
+ 158301 PASS
+  23531 VQSRTrancheSNP99.00to100.00
+   5847 VQSRTrancheSNP97.00to99.00
+   4635 VQSRTrancheINDEL99.00to100.00
+   1314 VQSRTrancheINDEL97.00to99.00
+    266 VQSRTrancheINDEL95.00to97.00
 
-Done all tasks
+Done: 02Oct2020_17:59:38
+

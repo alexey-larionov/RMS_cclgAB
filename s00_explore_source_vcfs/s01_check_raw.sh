@@ -45,8 +45,8 @@ echo ""
 
 # Folders
 base_folder="/rds/project/erf33/rds-erf33-medgen"
-project_folder="${base_folder}/users/mae/RMS_2020Sept"
-data_folder="${project_folder}/RMS/data/s00_source_vcfs"
+project_folder="${base_folder}/users/mae/RMS_2020Sept/RMS_cclgAB"
+data_folder="${project_folder}/data/s00_source_vcfs"
 stats_folder="${data_folder}/CCLG_GL_hg38.bwa.stats"
 rm -fr "${stats_folder}"
 mkdir "${stats_folder}"

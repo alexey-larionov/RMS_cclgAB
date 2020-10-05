@@ -1,35 +1,35 @@
-Job id: 29083072
-Allocated node: cpu-e-26
-Tue 22 Sep 17:18:38 BST 2020
+Job id: 29605353
+Allocated node: cpu-e-120
+Sat  3 Oct 15:14:45 BST 2020
 
-Job name: s01_split_multialelic_sites
+Job name: s01_split_multiallelic_sites
 
 Initial working folder:
 /rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s04_split_multiallelic_sites
 
  ------------------ Job progress ------------------ 
 
-Started s01_split: 22Sep2020_17:18:38
+Started s01_split: 03Oct2020_15:14:45
 
 Variant counts before splitting:
 
 Number of samples: 84
-Number of SNPs:    135467
-Number of INDELs:  10600
+Number of SNPs:    135482
+Number of INDELs:  10599
 Number of MNPs:    0
 Number of others:  0
-Number of sites:   145675
+Number of sites:   145689
 
 Splitting multiallelic variants ...
 
 Variant counts after splitting: 
 
 Number of samples: 84
-Number of SNPs:    135758
-Number of INDELs:  15025
+Number of SNPs:    135774
+Number of INDELs:  15024
 Number of MNPs:    0
 Number of others:  0
-Number of sites:   151153
+Number of sites:   151169
 
-Done: 22Sep2020_17:19:57
+Done: 03Oct2020_15:15:48
 

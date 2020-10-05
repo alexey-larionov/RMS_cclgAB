@@ -44,7 +44,7 @@ echo ""
 
 # Folders
 base_folder="/rds/project/erf33/rds-erf33-medgen"
-project_folder="${base_folder}/users/mae/RMS_2020Sept"
+project_folder="${base_folder}/users/mae/RMS_2020Sept/RMS_cclgAB"
 data_folder="${project_folder}/data/s00_source_vcfs"
 scripts_folder="${project_folder}/scripts/s00_explore_source_vcfs"
 cd "${scripts_folder}"

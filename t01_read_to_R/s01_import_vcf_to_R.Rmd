@@ -72,7 +72,7 @@ vcf_file <- file.path(project_folder,"data","s05_annotate","CCLG_GL_hg38.bwa_10b
 
 # Read vcf to vcfR object 
 # called "full.vcfr"" to distinguish with the possible later subsetted versions of vcfr 
-full.vcfr <- read.vcfR(vcf_file) # verbose = F
+full.vcfr <- read.vcfR(vcf_file, verbose=F) # verbose = F
 
 # Check result
 full.vcfr
@@ -140,6 +140,7 @@ full_ad.mx <- extract.gt(full.vcfr, element="AD")
 dim(full_ad.mx)
 full_ad.mx[1:5,1:3]
 sum(is.na(full_ad.mx))/(nrow(full_ad.mx)*ncol(full_ad.mx))
+sum(full_ad.mx == "0,0")
 
 # Clean-up
 rm(full.vcfr)

@@ -2,12 +2,17 @@
 title: "Check data"
 author: "AL"
 date: "21/09/2020"
-output: 
+output:
   html_document:
-    toc: true
-    toc_float: true
-editor_options: 
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+  word_document:
+    toc: yes
+editor_options:
   chunk_output_type: console
+up-dated: 03/10/2020
 ---
 
 # Summary  
@@ -42,10 +47,10 @@ options(stringsAsFactors=F)
 
 ```{r}
 
-scripts_folder="/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/scripts/s02_vqsr"
+scripts_folder="/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/scripts/s02_vqsr"
 setwd(scripts_folder)
 
-data_folder="/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/data/s02_vqsr"
+data_folder="/rds/project/erf33/rds-erf33-medgen/users/mae/RMS_2020Sept/RMS_cclgAB/data/s02_vqsr"
 data.df <- read.table(file.path(data_folder,"CCLG_GL_hg38.bwa_10bp_vqsr_filt_annotations.txt"), 
                           header=T, quote="", sep="\t", comment.char = "")
 
